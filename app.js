@@ -15,6 +15,9 @@ response.sendFile(__dirname + '/views/about.html'));
 app.get('/works', (request, response, next) => 
 response.sendFile(__dirname + '/views/works.html'));
 
+app.get('/foto', (request, response, next) => 
+response.sendFile(__dirname + '/views/foto.html'));
+
 
 
 app.listen(port, () => { // allows incoming requests from clients
