@@ -16,8 +16,13 @@ app.get('/', (req, res) => { // defining my homepage route
 res.sendFile(__dirname + '/views/jlohome-page.html')
 })
 
-app.get('/about', (request, response, next) => {
-  response.sendFile(__dirname + '/views/about')
+//app.get('/about', (request, response, next) => {
+ // response.sendFile(__dirname + '/views/about')
+
+//});
+
+app.get('/about', (req, res, next) => {
+  res.sendFile(__dirname + '/views/about.html')
 });
 
 app.get('/works', (request, response) => {
